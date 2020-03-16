@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+    <div class="timer text-center p-2">
+        <h4>Quick! Time remaining is... </h4>
+        <h3 class="seconds">60</h3>
+    </div>
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h1>Week #4 Homework</h1>
+            </div>
+        </div>
+
+        <div class="row before-game-start ">
+            <div class="col-12 text-center">
+                <h2>Forumla 1 Quiz</h2>
+                <h4>To Begin, press 'Start', to view scores press 'Highscores'.</h4>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <button class="btn btn-primary mr-3 start-quiz-btn">Start</button>
+                <button class="btn btn-info highscores-btn">Highscores</button>
+            </div>
+        </div>
+
+        <div class="during-quiz hidden">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="question-title text-center">Question 1</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex flex-column align-items-right">
+                    <h4 class="question-text text-center mb-4">
+                        Who is the Reigning Formula 1 World Champion?
+                    </h4>
+                </div>
+            </div>
+            <div class="row question-answers">
+                <div class="col-12 col-sm-6 mb-2 px-1">
+                    <button class="btn btn-primary col-12">Sebastian Vettel</button>
+                </div>
+                <div class="col-12 col-sm-6 mb-2 px-1">
+                    <button class="btn btn-primary col-12">Charles Leclerc</button>
+                </div>
+                <div class="col-12 col-sm-6 mb-2 px-1">
+                    <button class="btn btn-primary col-12">Carlos Sainz Jr.</button>
+                </div>
+                <div class="col-12 col-sm-6 mb-2 px-1">
+                    <button class="btn btn-primary col-12">Lewis Hamilton</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="after-quiz hidden">
+            <div class="score-modal hidden">
+                <div class="row">
+                    <div class="col col-12">
+                        <h4>Test</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-12 text-center">
+                    <h2>Highscores</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Score</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody class="highscore-table">
+                        </tbody>
+                    </table>
+                    <div class="col col-12 d-flex justify-content-center">
+                        <button class="btn btn-primary play-again-btn">Play again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            </a>Nathan Teakle ~ Week 4 Homework.</a>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+        <script src="./javascript/questions.js"></script>
+        <script src="./javascript/script.js"></script>
+</body>
+
+</html>
